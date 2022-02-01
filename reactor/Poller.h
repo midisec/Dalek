@@ -118,7 +118,6 @@ void Poller::update(Channel *ch, int op)
 
 void Poller::fill(int num, std::vector<Channel *> &list)
 {   
-    P_LOG_TRACE("Poller::fill(%d)", num);
     for (size_t i = 0; i < num; ++i)
     {   
         int fd = events_[i].data.fd;
@@ -133,7 +132,6 @@ void Poller::fill(int num, std::vector<Channel *> &list)
 void Poller::poll(int timeOut, std::vector<Channel *> &list)
 {
     int number = epoll_wait(epollFd_, events_.data(), events_.size(), timeOut);
-    P_LOG_TRACE("Poller::poll()");
     if (number > 0)
     {
         fill(number, list);

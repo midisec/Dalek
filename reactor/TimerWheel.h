@@ -128,6 +128,7 @@ public:
    
     // If active time
     void tick() {
+
         slots[ptr].tick();
         ptr = (ptr + 1) % slots.size(); 
 

@@ -1,6 +1,5 @@
 #include "reactor/EventLoop.h"
 #include "http/httpd.h"
-#include <vector>
 #include <sys/wait.h>
 #include <unistd.h>
 
