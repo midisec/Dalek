@@ -1,9 +1,20 @@
 
 ```
-                                      ____    __    __    ____  _  _ 
-                                     (  _ \  /__\  (  )  ( ___)( )/ )
-                                      )(_) )/(__)\  )(__  )__)  )  ( 
-                                     (____/(__)(__)(____)(____)(_)\_)
+                                                   
+                                                   
+    ,---,                ,--,                 ,-.  
+  .'  .' `\            ,--.'|             ,--/ /|  
+,---.'     \           |  | :           ,--. :/ |  
+|   |  .`\  |          :  : '           :  : ' /   
+:   : |  '  | ,--.--.  |  ' |     ,---. |  '  /    
+|   ' '  ;  :/       \ '  | |    /     \'  |  :    
+'   | ;  .  .--.  .-. ||  | :   /    /  |  |   \   
+|   | :  |  '\__\/: . .'  : |__.    ' / '  : |. \  
+'   : | /  ; ," .--.; ||  | '.''   ;   /|  | ' \ \ 
+|   | '` ,/ /  /  ,.  |;  :    '   |  / '  : |--'  
+;   :  .'  ;  :   .'   |  ,   /|   :    ;  |,'     
+|   ,.'    |  ,     .-./---`-'  \   \  /'--'       
+'---'       `--`---'             `----'          
 ```
 ## 搭建
 `chmod 777 -c build.sh`
@@ -49,47 +60,6 @@ Requests: 322786 susceed, 0 failed.
 Dalek
 ├─ CMakeLists.txt
 ├─ Dalek.cc
-├─ base
-│  ├─ SyncLogger.h
-│  ├─ copyable.h
-│  ├─ noncopyable.h
-│  └─ swap.h
-├─ build
-├─ build.sh
-├─ config.h
-├─ http
-│  ├─ Buffer.h
-│  ├─ Dalek.cc
-│  ├─ base.h
-│  ├─ httpd.h
-│  ├─ httppar.h
-│  ├─ httpres.h
-│  └─ mime.h
-├─ json
-│  └─ pson.h
-└─ reactor
-   ├─ Channel.h
-   ├─ EventLoop.h
-   ├─ InetAddress.h
-   ├─ Poller.h
-   ├─ Socket.h
-   ├─ TimerWheel.h
-   └─ base.h
-
-```
-## 参考
-nginx
-muduo
-## TODO 
-* Json 配置服务器
-* 支持更多方法
-
-
-
-```
-Dalek
-├─ CMakeLists.txt
-├─ Dalek.cc
 ├─ README.md
 ├─ base
 │  ├─ SyncLogger.h
@@ -115,3 +85,12 @@ Dalek
    └─ base.h
 
 ```
+## 参考
+nginx
+muduo
+## TODO 
+* Json 配置服务器
+* 支持更多方法
+
+
+
