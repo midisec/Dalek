@@ -19,7 +19,8 @@
 ## 搭建
 `chmod 777 -c build.sh`
 `./build.sh`
-
+## 用法
+`./Dalek start [-p port] [-n worker_num]`
 
 ## 测试
 测试机器处理器：`i5-9300` ，系统 `Ubuntu 20.0.4`
