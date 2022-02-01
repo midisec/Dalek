@@ -42,6 +42,7 @@ Requests: 322786 susceed, 0 failed.
 `Master/Worker`模型，端口复用，使用时间轮管理长连接 ，每个工作进程创建一个`EventLoop`和`HttpServer`，`HttpServer`负责接受连接，注册连接进入`EventLoop`和`TimerWheel`。
 
 ## Dalek细节
+`master`进程主要负责杀死`worker`进程， 当`worker`进程挂了，就会唤醒`master`进程，再`fork()`一个`worker`
 `httppar.h`实现了一个高性能的http解析器，可以在客户端40ms发送1byte的情况下正确的解析http请求包 ，`reactor`目录下则对事件进行了抽象，任何IO事件都封装成`Channel`，包括定时事件`TimerWheel`，服务器事件`HttpServer`，连接事件`HttpConnection`
 
 
