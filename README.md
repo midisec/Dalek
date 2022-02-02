@@ -16,6 +16,8 @@
 |   ,.'    |  ,     .-./---`-'  \   \  /'--'       
 '---'       `--`---'             `----'          
 ```
+Dalek跑着我的小网站 ：）
+[pink](http://www.pinkdoc.cn)
 ## 搭建
 `chmod 777 -c build.sh`
 `./build.sh`
